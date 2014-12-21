@@ -246,24 +246,6 @@
 
 
 #if PARSE_IOS_ONLY
-@implementation PFImageView (PromiseKit)
-
-- (PMKPromise *)promiseLoad
-{
-    return [PMKPromise new:^(PMKPromiseFulfiller fulfiller, PMKPromiseRejecter rejecter) {
-        [self loadInBackground:^(UIImage *image, NSError *error) {
-            if (error) {
-                rejecter(error);
-            }
-            else {
-                fulfiller(image);
-            }
-        }];
-    }];
-}
-
-@end
-
 
 @implementation PFPurchase (PromiseKit)
 

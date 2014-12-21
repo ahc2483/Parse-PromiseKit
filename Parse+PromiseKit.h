@@ -213,17 +213,6 @@
 @end
 
 #if PARSE_IOS_ONLY
-@interface PFImageView (PromiseKit)
-
-/**
- Initiate downloading of the remote image. Once the download completes, the remote image will be
- displayed. Thens the downloaded `UIImage *`.
- @return A Promise that thens `UIImage *image`.
- */
-- (PMKPromise *)promiseLoad;
-
-@end
-
 
 @interface PFPurchase (PromiseKit)
 

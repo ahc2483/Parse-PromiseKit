@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name        = 'Parse+PromiseKit'
-  s.version     = '0.9.2'
-  s.source      = { :git => 'https://github.com/hathway/Parse-PromiseKit.git', :tag => 'v' + s.version.to_s }
+  s.version     = '0.9.3'
+  s.source      = { :git => 'https://github.com/ahc2483/Parse-PromiseKit.git', :tag => 'v' + s.version.to_s }
   s.summary     = 'A PromiseKit category for the Parse SDK.'
 
   s.description = <<-DESC
